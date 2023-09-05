@@ -78,6 +78,8 @@ $(window).on('load', function () {
     $('.loader').fadeOut('slow');
   }, 500);
   $('.loader').remove('slow');
+
+  $('head').append(`<style>*:not(input[type="text"]){-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}</style>`);
 });
 
 var searchdelay;
